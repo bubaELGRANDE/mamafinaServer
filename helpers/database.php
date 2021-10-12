@@ -6,10 +6,10 @@ class dataBase{
     private static $error = null;
 
     private static function connect(){
-        $server = 'localhost';
+        $server = '34.69.168.235';
         $database = 'mamafina';
-        $username = 'mamafina';
-        $password = '123';
+        $username = 'postgres';
+        $password = 'mamafina';
 
         self::$connection = new PDO('pgsql:host='.$server.';dbname='.$database.';port=5432', $username, $password);
     }
